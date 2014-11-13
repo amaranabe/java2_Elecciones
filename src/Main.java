@@ -1,18 +1,14 @@
-
+import java.io.*;
+import java.util.*;
 /*
  *Programa para utilizar clases de la carpeta Elecciones.
  */
 
 public class Main 
 {
-	public static void main (String args[]) {
+	public static void main (String args[]) 
+	{
 
-	/*String localidad= amurrio;
-	String provincia= bizkaia;
-	int numconcejales=23;
-	int censo=1050;
-	*/
-	
 	//Instaciar clase Ayuntamiento
 	Ayuntamiento ayuntamiento=new Ayuntamiento();
 	//Asignar un valor con metodo set
@@ -100,6 +96,38 @@ public class Main
 	System.out.println("Nombre del Presidente: " + partido.getNombregerente());
 	System.out.println();
 
+	try {
+		String lecturapartidos;
+		File ficherolectura=new File("listadopartidos.txt");
+		FileReader lector=new FileReader(ficherolectura);
+		BufferedReader br=new BufferedReader(lector);
+		
+		lecturapartidos=br.readLine();
+
+/*Guardamos los nombres de los partidos en el atributo nompartido (por medio del metodo set) en objetos tipo Partido. 
+Y que a su vez se han añadido al ArrayList.*/
+
+		//Instanciar un array con elementos de tipo Partido y un objeto de tipo Partido
+		ArrayList <Partido> array=new ArrayList <Partido>();
+		Partido p=new Partido();
+		//Llamamos al metodo setPartido para modificar el atributo nompartido del objeto p
+		p.setPartido(lecturapartidos);
+		//Llamamos al metodo add para añadir la información de p al array 
+		array.add(p);
+		
+		while (lecturapartidos!=null)
+		{
+
+				System.out.println(lecturapartidos);
+				lecturapartidos=br.readLine();
+				p.setPartido(lecturapartidos);
+				array.add(p);
+
+		} 
+		} //fin del try
+	catch (Exception e) {
+		System.out.println("Ha habido un error");
+	}
 	}
 
 }
