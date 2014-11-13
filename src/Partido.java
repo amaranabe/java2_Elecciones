@@ -79,7 +79,7 @@ public class  Partido
 	}
 	//-- otros metodos --//
 
-	public void mostrarInfoEnPantalla()
+	public void mostrarInfo()
 	{
 		System.out.println( "Partido :" + nombrepartido);
 		System.out.println( "=====================================");

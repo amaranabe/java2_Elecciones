@@ -6,7 +6,7 @@ public class Ayuntamiento
 
 	String localidad;
 	String provincia;
-	String nombredepartamento;
+	int numconcejales;
 	int censo;	
 
 	public String getLocalidad()
@@ -27,13 +27,13 @@ public class Ayuntamiento
 		provincia=idprovincia;
 	}
 
-	public String getNombredepartamento()
+	public int getNumconcejales()
 	{
-		return nombredepartamento;
+		return numconcejales;
 	}
-	public void setNombredepartamento(String iddepartamento)
+	public void setNumconcejales(int idnumconcejales)
 	{
-		nombredepartamento=iddepartamento;
+		numconcejales=idnumconcejales;
 	}
 
 	public int getCenso()
@@ -43,5 +43,13 @@ public class Ayuntamiento
 	public void setCenso(int idcenso)
 	{
 		censo=idcenso;
+	}
+	public void mostrarInfo()
+	{
+		System.out.println( "Localidad :" + localidad);
+		System.out.println( "Provincia :" + provincia);
+		System.out.println( "Numero de concejales:" + numconcejales);
+		System.out.println( "Censo :" + censo);
+
 	}
 }

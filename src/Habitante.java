@@ -4,13 +4,10 @@ public class Habitante
 
 	}	
 	private String dni;
-	private String nombre;
-	private String apellido1;
-	private String apellido2;
+	private String nombreapellidos;
 	private String direccion;
 	private String localidad;
 	private String provincia;
-	private int cp;
 	private int fechanacimiento;
 	private int numtelefono;
 
@@ -23,31 +20,13 @@ public class Habitante
 		dni=identificacion;
 	}
 
-	public String getNombre()
+	public String getNombreapellidos()
 	{
-		return nombre;
+		return nombreapellidos;
 	}
-	public void setNombre(String idnombre)
+	public void setNombreapellidos(String idnombre)
 	{
-		nombre=idnombre;
-	}
-
-	public String getApellido1()
-	{
-		return apellido1;
-	}
-	public void setApellido1(String idapellido1)
-	{
-		apellido1=idapellido1;
-	}
-
-	public String getApellido2()
-	{
-		return apellido2;
-	}
-	public void setApellido2(String idapellido2)
-	{
-		apellido1=idapellido2;
+		nombreapellidos=idnombre;
 	}
 
 	public String getDireccion()
@@ -75,15 +54,6 @@ public class Habitante
 	public void setProvincia(String idprovincia)
 	{
 		provincia=idprovincia;
-	}
-
-	public int getCp()
-	{
-		return cp;
-	}
-	public void setCp(int idcp)
-	{
-		cp=idcp;
 	}
 
 	public int getFecha()
