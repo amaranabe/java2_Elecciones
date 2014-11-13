@@ -8,7 +8,7 @@ public class Habitante
 	private String direccion;
 	private String localidad;
 	private String provincia;
-	private int fechanacimiento;
+	private long fechanacimiento;
 	private int numtelefono;
 
 	public String getDni()
@@ -56,22 +56,22 @@ public class Habitante
 		provincia=idprovincia;
 	}
 
-	public int getFecha()
+	public long getFecha()
 	{
 		return fechanacimiento;
 	}
-	public void setFecha(int idfechanacimiento)
+	public void setFecha(long idfechanacimiento)
 	{
-		fechanacimiento=idfechanacimiento
+		fechanacimiento=idfechanacimiento;
 	}
 
 	public int getTelefono()
 	{
-		return telefono;
+		return numtelefono;
 	}
 
-	public void setTelefono(int idtelefono)
+	public void setTelefono(int idnumtelefono)
 	{
-		telefono=idtelefono;
+		numtelefono=idnumtelefono;
 	}
 }

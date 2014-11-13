@@ -11,10 +11,8 @@ public class  Partido
 	private int nummilitantes;
 	private int numafiliados;
 	private String nombregerente;
-	private String ideologia;
-	private int financiacion;
-	private int aniofundacion;
 	
+		
 //-- MÉTODOS O FUNCIONES MIEMBRO --//
 
 	//-- get y set --//
@@ -26,24 +24,15 @@ public class  Partido
 	{
 		nombrepartido=idpartido;
 	}
-	public String getNombreGerente()
+	public String getNombregerente()
 	{
 		return nombregerente;
 	}
-	public void setNombreGerente(String idNombreGerente)
+	public void setNombregerente(String idnombregerente)
 	{
-		nombregerente=idNombreGerente;
+		nombregerente=idnombregerente;
 	}
-	public String getIdeologia()
-	{
-		return ideologia;
-	}
-	public void setIdeologia(String idIdeologia)
-	{
-		ideologia=idIdeologia;
-	}
-
-
+	
 	public int getMilitantes()
 	{
 		return nummilitantes;
@@ -59,24 +48,9 @@ public class  Partido
 	}
 	public void setAfiliados(int idnumafiliados)
 	{
-		nummilitantes=idnumafiliados;
+		numafiliados=idnumafiliados;
 	}
-	public int getFinanciacion()
-	{
-		return financiacion;
-	}
-	public void setFinanciacion(int idFinanciacion)
-	{
-		financiacion=idFinanciacion;
-	}
-	public int getAnioFundacion()
-	{
-		return aniofundacion;
-	}
-	public void setAnioFundacion(int idAnioFundacion)
-	{
-		aniofundacion=idAnioFundacion;
-	}
+	
 	//-- otros metodos --//
 
 	public void mostrarInfo()
@@ -86,9 +60,7 @@ public class  Partido
 		System.out.println( "   Numero de Militantes: " + nummilitantes);
 		System.out.println( "   Numero de Afiliados: " + numafiliados);
 		System.out.println( "   Nombre del Gerente:" + nombregerente);
-		System.out.println( "   Ideologia: " + ideologia);
-		System.out.println( "   Financiación:" + financiacion);
-		System.out.println( "   Año fundación:" + aniofundacion);
+		
 	}
 	public double relacionAfiliadoMilitante()
 	{

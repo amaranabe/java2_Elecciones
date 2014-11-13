@@ -8,9 +8,7 @@ public class Inmueble
 	private int superficie;
 	private String direccion;
 	private String localidad;
-	private int cp;
-	private String provincia;
-	
+		
 	public int getNumhabitantes()
 	{
 		return numhabitantes;
@@ -27,15 +25,6 @@ public class Inmueble
 	public void setNumhuecos(int idnumhuecos)
 	{
 		numhuecos=idnumhuecos;
-	}
-
-	public int getSuperficie()
-	{
-		return superficie;
-	}
-	public void setSuperficie(int idsuperficie)
-	{
-		superficie=idsuperficie;
 	}
 
 	public int getSuperficie()
@@ -65,23 +54,5 @@ public class Inmueble
 		localidad=idlocalidad;
 	}
 
-	public int getCp()
-	{
-		return cp;
-	}
-	public void setCp(int idcp)
-	{
-		cp=idcp;
-	}
-
-	public String getProvincia()
-	{
-		return provincia;
-	}
-	public void setProvincia(String idprovincia)
-	{
-		provincia=idprovincia;
-	}
-
-	
+		
 }
