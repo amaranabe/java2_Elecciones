@@ -96,7 +96,7 @@ public class Main
 	System.out.println("Nombre del Presidente: " + partido.getNombregerente());
 	System.out.println();
 
-	try {
+	/*try {*/
 		String lecturapartidos;
 		File ficherolectura=new File("listadopartidos.txt");
 		FileReader lector=new FileReader(ficherolectura);
@@ -116,16 +116,17 @@ public class Main
 		
 		while (lecturapartidos!=null)
 		{
+
 				System.out.println(lecturapartidos);
 				lecturapartidos=br.readLine();
 				p.setPartido(lecturapartidos);
 				array.add(p);
 
-		}
+		} /*
 		} //fin del try
 	catch (Exception e) {
 		System.out.println("Ha habido un error");
-	}
+	}*/
 	}
 
 }
