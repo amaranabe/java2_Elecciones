@@ -140,8 +140,10 @@ Y que a su vez se han añadido al ArrayList.*/
 				indicearray=indicearray +1;
 
 		}
-	
+		//Vaciamos el ArrayList
+		array.clear();
 		} //fin del try
+		
 	catch (Exception er) {
 		System.out.println("Ha habido un error Io:  "+er.getMessage());
 	}
