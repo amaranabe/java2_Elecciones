@@ -96,6 +96,7 @@ public class Main
 	System.out.println("Nombre del Presidente: " + partido.getNombregerente());
 	System.out.println();
 
+/*EJERCICIO 3.7*/
 	try {
 		String lecturapartidos;
 		File ficherolectura=new File("listadopartidos.txt");
@@ -104,27 +105,45 @@ public class Main
 		
 		lecturapartidos=br.readLine();
 
-/*Guardamos los nombres de los partidos en el atributo nompartido (por medio del metodo set) en objetos tipo Partido. Y que a su vez se han añadido al ArrayList.*/
+/*Guardar los nombres de los partidos en el atributo nompartido (por medio del metodo set) en objetos tipo Partido. 
+Y que a su vez se han añadido al ArrayList.*/
 
-		//Instanciar un array con elementos de tipo Partido y un objeto de tipo Partido
+		//Instanciar un array con elementos de tipo <Partido>
 		ArrayList <Partido> array=new ArrayList <Partido>();
-		Partido p=new Partido();
-		//Llamamos al metodo setPartido para modificar el atributo nompartido del objeto p
-		p.setPartido(lecturapartidos);
-		//Llamamos al metodo add para añadir la información de p (tipo partido) al array 
-		array.add(p);
-		
+				
 		while (lecturapartidos!=null)
 		{
 				System.out.println(lecturapartidos);
-				lecturapartidos=br.readLine();
+				//Instancio un objeto de tipo Partido
+				Partido p=new Partido();
+				//Llamamos al metodo setPartido para modificar el atributo nompartido del objeto p
 				p.setPartido(lecturapartidos);
+				//Llamamos al metodo add para añadir la información de p (tipo partido) al array 
 				array.add(p);
 
+				lecturapartidos=br.readLine();
+
 		}
+
+/*EJERCICIO 3.8: Recuperar, leer y mostrar lo que hay en el array creado anteriormente*/
+
+		//Para comprobar lo que tiene p: System.out.println ("El contenido de p "+p.getPartido());
+		System.out.println ();
+		System.out.println ("CONTENIDO DEL ARRAY  "+ array.size());
+		
+		int indicearray=0;
+		while(indicearray<array.size())
+		{
+
+				String a= array.get(indicearray).getPartido();
+				System.out.println ("El nombre del partido "+(indicearray+1) +" es: " +a);
+				indicearray=indicearray +1;
+
+		}
+	
 		} //fin del try
-	catch (Exception e) {
-		System.out.println("Ha habido un error");
+	catch (Exception er) {
+		System.out.println("Ha habido un error Io:  "+er.getMessage());
 	}
 	}
 
