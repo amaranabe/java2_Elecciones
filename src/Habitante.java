@@ -9,7 +9,8 @@ public class Habitante
 	private String localidad;
 	private String provincia;
 	private long fechanacimiento;
-	private int numtelefono;
+	private int edad;
+	private long numtelefono;
 
 	public String getDni()
 	{
@@ -56,6 +57,15 @@ public class Habitante
 		provincia=idprovincia;
 	}
 
+	public int getEdad()
+	{
+		return edad;
+	}
+	public void setEdad(int idedad)
+	{
+		edad=idedad;
+	}
+
 	public long getFecha()
 	{
 		return fechanacimiento;
@@ -65,13 +75,28 @@ public class Habitante
 		fechanacimiento=idfechanacimiento;
 	}
 
-	public int getTelefono()
+	public long getTelefono()
 	{
 		return numtelefono;
 	}
 
-	public void setTelefono(int idnumtelefono)
+	public void setTelefono(long idnumtelefono)
 	{
 		numtelefono=idnumtelefono;
 	}
+
+	public void infohabitante()
+	{
+		System.out.println( " Nombre y Apellidos:" + nombreapellidos);
+		System.out.println( "    DNI: " + dni);
+		System.out.println( "    Direccion: " + direccion);
+		System.out.println( "    Localidad:" + localidad);
+		System.out.println( "    Provincia: " + provincia);
+		System.out.println( "    Edad: " + edad);
+		System.out.println( "    Fecha de nacimiento:" + fechanacimiento);
+		System.out.println( "    Telefono: " + numtelefono);
+
+
+	}
+
 }

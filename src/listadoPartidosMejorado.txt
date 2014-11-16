@@ -1,5 +1,5 @@
-Bildu, 
-PNV (Partido Nacionalista Vasco)
-PSE (Partido Socialista de Euskadi)
-Esker Batua-Berdeak
-Geroa Bai
+Bildu, 600, 9000, Peio Urizar
+PNV (Partido Nacionalista Vasco), 2000, 31000, Iñigo Urkullu
+PSE (Partido Socialista de Euskadi), 900, 10000, Idoia Mendia
+Esker Batua-Berdeak, 200, 1000, José Navas
+Geroa Bai, 750, 7000, Uxue Barcos

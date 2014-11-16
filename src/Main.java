@@ -85,14 +85,14 @@ public class Main
 	//Asignar un valor con metodo set
 	partido.setPartido("Partido Popular Vasco");
 	partido.setMilitantes(725000);
-	partido.setAfiliados(100000);
+	partido.setSimpatizantes(100000);
 	partido.setNombregerente("Arantza Quiroga");
 
 	//Visualizar en pantalla los valores utilizando metodos get
 	System.out.println("INFORMACION DE PARTIDO");
 	System.out.println("Nombre: " + partido.getPartido());
 	System.out.println("Numero de militantes: " + partido.getMilitantes());
-	System.out.println("Numero de afiliados: " + partido.getAfiliados());
+	System.out.println("Numero de afiliados: " + partido.getSimpatizantes());
 	System.out.println("Nombre del Presidente: " + partido.getNombregerente());
 	System.out.println();
 
@@ -129,7 +129,7 @@ Y que a su vez se han añadido al ArrayList.*/
 
 		//Para comprobar lo que tiene p: System.out.println ("El contenido de p "+p.getPartido());
 		System.out.println ();
-		System.out.println ("CONTENIDO DEL ARRAY  "+ array.size());
+		System.out.println ("CONTENIDO DEL ARRAY:  "+ array.size() +" filas");
 		
 		int indicearray=0;
 		while(indicearray<array.size())

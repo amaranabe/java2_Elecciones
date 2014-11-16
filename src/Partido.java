@@ -9,7 +9,7 @@ public class  Partido
 	//-- variables miembro, atributos --//
 	private String nombrepartido;
 	private int nummilitantes;
-	private int numafiliados;
+	private int numsimpatizantes;
 	private String nombregerente;
 	
 		
@@ -42,13 +42,13 @@ public class  Partido
 		nummilitantes=idnummilitantes;
 	}
 
-	public int getAfiliados()
+	public int getSimpatizantes()
 	{
-		return numafiliados;
+		return numsimpatizantes;
 	}
-	public void setAfiliados(int idnumafiliados)
+	public void setSimpatizantes(int idnumsimpatizantes)
 	{
-		numafiliados=idnumafiliados;
+		numsimpatizantes=idnumsimpatizantes;
 	}
 	
 	//-- otros metodos --//
@@ -58,14 +58,14 @@ public class  Partido
 		System.out.println( "Partido :" + nombrepartido);
 		System.out.println( "=====================================");
 		System.out.println( "   Numero de Militantes: " + nummilitantes);
-		System.out.println( "   Numero de Afiliados: " + numafiliados);
+		System.out.println( "   Numero de Simpatizantes: " + numsimpatizantes);
 		System.out.println( "   Nombre del Gerente:" + nombregerente);
 		
 	}
-	public double relacionAfiliadoMilitante()
+	public double relacionSimpatizanteMilitante()
 	{
 			// devuelve el número de afiliados por cada 100 militantes (tanto por ciento)
-			return (numafiliados/nummilitantes) * 100;
+			return (numsimpatizantes/nummilitantes) * 100;
 	
 	}
 	
